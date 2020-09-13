@@ -13,7 +13,6 @@ using nUpdate.Administration.Core.Application;
 using nUpdate.Administration.Core.Localization;
 using nUpdate.Administration.Properties;
 using nUpdate.Administration.UI.Popups;
-using nUpdate.Internal.Core;
 
 namespace nUpdate.Administration.UI.Dialogs
 {

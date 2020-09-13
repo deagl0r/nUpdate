@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 
 // ReSharper disable once CheckNamespace
-namespace nUpdate.WPFUserInterface.ServiceInterfaces
+namespace nUpdate.UI.WPF.ServiceInterfaces
 {
     public class ServiceContainer
     {

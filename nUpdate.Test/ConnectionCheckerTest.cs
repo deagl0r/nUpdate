@@ -2,7 +2,6 @@
 // Copyright (C) Dominic Beger 17.06.2019
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using nUpdate.Internal.Core;
 
 namespace nUpdate.Test
 {

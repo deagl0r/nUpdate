@@ -3,13 +3,10 @@
 
 using System;
 using System.Collections.Generic;
-using System.Drawing;
-using System.IO;
 using System.Text;
 using System.Threading;
 using System.Windows.Forms;
-using nUpdate.UpdateInstaller.UI.Popups;
-using Operation = nUpdate.UpdateInstaller.Operations.Operation;
+using nUpdate.Actions;
 
 namespace nUpdate.UpdateInstaller
 {
@@ -118,7 +115,7 @@ namespace nUpdate.UpdateInstaller
         public static HostApplicationOptions HostApplicationOptions { get; set; }
 
         // Deprecated, there for compatiblity
-        public static Dictionary<string, IEnumerable<Operation>> Operations { get; set; }
+        public static Dictionary<string, IEnumerable<IUpdateAction>> Operations { get; set; }
 
         public static int HostProcessId { get; set; }
 
@@ -156,7 +153,7 @@ namespace nUpdate.UpdateInstaller
                 // Argument 4 became deprecated, but for compatibility reasons we need to have this
                 Operations = appArguments[4].Equals(string.Empty)
                     ? null
-                    : Serializer.Deserialize<Dictionary<string, IEnumerable<Operation>>>(Encoding.UTF8.GetString(Convert.FromBase64String(appArguments[4])));
+                    : Serializer.Deserialize<Dictionary<string, IEnumerable<IUpdateAction>>>(Encoding.UTF8.GetString(Convert.FromBase64String(appArguments[4])));
                 ExternalGuiAssemblyPath = appArguments[5];
                 ExtractFilesText = appArguments[6];
                 CopyingText = appArguments[7];

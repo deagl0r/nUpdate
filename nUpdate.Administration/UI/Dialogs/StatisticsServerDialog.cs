@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using nUpdate.Administration.Core;
 using nUpdate.Administration.UI.Controls;
 using nUpdate.Administration.UI.Popups;
-using nUpdate.Internal.Core;
 
 namespace nUpdate.Administration.UI.Dialogs
 {

@@ -3,7 +3,7 @@
 
 using System.Windows.Controls;
 
-namespace nUpdate.WPFUserInterface.UI.UserControls
+namespace nUpdate.UI.WPF.UI.UserControls
 {
     /// <summary>
     ///     Interaktionslogik für uclChangelogView.xaml

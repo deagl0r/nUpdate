@@ -6,7 +6,7 @@ using System.Drawing.Imaging;
 using System.IO;
 using System.Windows;
 using System.Windows.Media.Imaging;
-using nUpdate.Internal.Core;
+using nUpdate.UI.WPF;
 using nUpdate.UpdateInstaller.Client.GuiInterface;
 
 namespace nUpdate.WPFUpdateInstaller

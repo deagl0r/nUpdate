@@ -6,10 +6,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
-using nUpdate.WPFUserInterface.Annotations;
+using nUpdate.UI.WPF.Properties;
 
 // ReSharper disable once CheckNamespace
-namespace nUpdate.WPFUserInterface.ViewModel
+namespace nUpdate.UI.WPF.ViewModel
 {
     public class ViewModelBase : INotifyPropertyChanged, IDisposable
     {

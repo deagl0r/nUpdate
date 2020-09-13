@@ -3,16 +3,43 @@
 
 using System;
 using System.IO;
-using nUpdate.Internal.Core.Localization;
-using nUpdate.WPFUserInterface.ServiceInterfaces;
-using nUpdate.WPFUserInterface.Services;
-using nUpdate.WPFUserInterface.ViewModel;
+using System.Threading;
+using nUpdate.Localization;
+using nUpdate.UI.WPF.ServiceInterfaces;
+using nUpdate.UI.WPF.Services;
+using nUpdate.UI.WPF.ViewModel;
 
 // ReSharper disable once CheckNamespace
-namespace nUpdate.Updating
+namespace nUpdate.UI.WPF
 {
-    public sealed partial class UpdaterUI
+    public sealed class UpdaterUI
     {
+        private bool _active;
+
+        public UpdaterUI(UpdateManager updateManager, SynchronizationContext context)
+        {
+            UpdateManager = updateManager;
+            Context = context;
+        }
+
+
+        /// <summary>
+        ///     Gets or sets the <see cref="SynchronizationContext" /> to use for mashalling the user interface specific calls to
+        ///     the current UI thread.
+        /// </summary>
+        internal SynchronizationContext Context { get; set; }
+
+        /// <summary>
+        ///     Gets or sets the given instance of the <see cref="UpdateManager" />-class.
+        /// </summary>
+        internal UpdateManager UpdateManager { get; set; }
+
+        /// <summary>
+        ///     Gets or sets a value indicating whether a hidden search should be provided in order to search in the background
+        ///     without informing the user, or not.
+        /// </summary>
+        public bool UseHiddenSearch { get; set; }
+
         /// <summary>
         ///     Starts the complete update process and uses the integrated user interface for user interaction.
         /// </summary>

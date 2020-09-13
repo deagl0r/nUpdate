@@ -23,9 +23,6 @@ using nUpdate.Administration.Properties;
 using nUpdate.Administration.TransferInterface;
 using nUpdate.Administration.UI.Controls;
 using nUpdate.Administration.UI.Popups;
-using nUpdate.Core;
-using nUpdate.Internal.Core;
-using nUpdate.Updating;
 
 namespace nUpdate.Administration.UI.Dialogs
 {
@@ -270,7 +267,7 @@ namespace nUpdate.Administration.UI.Dialogs
                 return;
             }
 
-            var packageAddDialog = new PackageAddDialog
+            var packageDialog = new PackageDialog
             {
                 FtpPassword = FtpPassword.Copy(),
                 SqlPassword = SqlPassword.Copy(),
@@ -279,10 +276,10 @@ namespace nUpdate.Administration.UI.Dialogs
 
             var existingUpdateVersions =
                 (from ListViewItem lvi in packagesList.Items select new UpdateVersion(lvi.Tag.ToString())).ToList();
-            packageAddDialog.ExistingVersions = existingUpdateVersions;
-            packageAddDialog.Project = Project;
+            //packageDialog.ExistingVersions = existingUpdateVersions;
+            packageDialog.Project = Project;
 
-            if (packageAddDialog.ShowDialog() != DialogResult.OK)
+            if (packageDialog.ShowDialog() != DialogResult.OK)
                 return;
 
             packagesList.Items.Clear();
@@ -459,7 +456,7 @@ namespace nUpdate.Administration.UI.Dialogs
                 return;
             }
 
-            var packageEditDialog = new PackageEditDialog
+            var packageEditDialog = new PackageDialog
             {
                 Project = Project,
                 PackageVersion = packageVersion,
@@ -1270,7 +1267,7 @@ namespace nUpdate.Administration.UI.Dialogs
 
         private async Task UploadPackage(UpdateVersion packageVersion)
         {
-            await TaskEx.Run(() =>
+            await Task.Run(() =>
             {
                 if (!File.Exists(
                     Project.Packages.First(item => item.Version == packageVersion.ToString()).LocalPackagePath))

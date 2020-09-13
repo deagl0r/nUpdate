@@ -4,8 +4,8 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using nUpdate.Actions;
 using nUpdate.Administration.UI.Popups;
-using nUpdate.Internal.Core.Operations;
 
 namespace nUpdate.Administration.Core.Operations.Panels
 {
@@ -23,7 +23,7 @@ namespace nUpdate.Administration.Core.Operations.Panels
         }
 
         public bool IsValid => !string.IsNullOrEmpty(processNameTextBox.Text);
-        public Operation Operation => new Operation(OperationArea.Processes, OperationMethod.Stop, ProcessName);
+        public IUpdateAction Operation => new StopProcessAction();
 
         private void environmentVariablesButton_Click(object sender, EventArgs e)
         {

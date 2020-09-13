@@ -4,7 +4,7 @@
 using System;
 using System.Drawing;
 
-namespace ExplorerNavigationButton
+namespace nUpdate.Administration.UI.Controls.ExplorerNavigationButton
 {
     public partial class ExplorerNavigationButton
     {

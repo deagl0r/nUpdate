@@ -5,7 +5,7 @@ using System;
 using System.ComponentModel;
 using System.Linq;
 using System.Windows.Forms;
-using nUpdate.Internal.Core.Operations;
+using nUpdate.Actions;
 
 namespace nUpdate.Administration.Core.Operations.Panels
 {
@@ -31,8 +31,7 @@ namespace nUpdate.Administration.Core.Operations.Panels
 
         public bool IsValid => !string.IsNullOrEmpty(subKeyTextBox.Text) && ItemList.Any();
 
-        public Operation Operation
-            => new Operation(OperationArea.Registry, OperationMethod.DeleteValue, KeyPath, ItemList.ToList());
+        public IUpdateAction Operation => new DeleteRegistryValueAction();
 
         private void addButton_Click(object sender, EventArgs e)
         {

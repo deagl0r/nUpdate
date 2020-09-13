@@ -1,7 +1,7 @@
 ﻿// IOperationPanel.cs, 10.06.2019
 // Copyright (C) Dominic Beger 17.06.2019
 
-using nUpdate.Internal.Core.Operations;
+using nUpdate.Actions;
 
 namespace nUpdate.Administration.Core.Operations.Panels
 {
@@ -15,6 +15,6 @@ namespace nUpdate.Administration.Core.Operations.Panels
         /// <summary>
         ///     Gets the current operation to perform.
         /// </summary>
-        Operation Operation { get; }
+        IUpdateAction Operation { get; }
     }
 }

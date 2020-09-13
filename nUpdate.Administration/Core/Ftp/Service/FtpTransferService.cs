@@ -8,7 +8,6 @@ using System.Net;
 using System.Security;
 using System.Threading;
 using nUpdate.Administration.TransferInterface;
-using nUpdate.Updating;
 using Starksoft.Aspen.Ftps;
 using Starksoft.Aspen.Proxy;
 using TransferProgressEventArgs = nUpdate.Administration.TransferInterface.TransferProgressEventArgs;

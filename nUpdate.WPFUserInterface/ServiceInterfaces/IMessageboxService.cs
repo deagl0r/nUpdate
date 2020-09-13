@@ -3,7 +3,7 @@
 
 // ReSharper disable once CheckNamespace
 
-namespace nUpdate.WPFUserInterface.ServiceInterfaces
+namespace nUpdate.UI.WPF.ServiceInterfaces
 {
     public interface IMessageboxService
     {

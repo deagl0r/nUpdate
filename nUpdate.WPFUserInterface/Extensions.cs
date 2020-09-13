@@ -6,7 +6,7 @@ using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace nUpdate
+namespace nUpdate.UI.WPF
 {
     public static class Extensions
     {

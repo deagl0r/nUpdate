@@ -2,7 +2,7 @@
 // Copyright (C) Dominic Beger 17.06.2019
 
 using System.Windows.Forms;
-using nUpdate.Internal.Core.Operations;
+using nUpdate.Actions;
 
 namespace nUpdate.Administration.Core.Operations.Panels
 {
@@ -20,6 +20,6 @@ namespace nUpdate.Administration.Core.Operations.Panels
         }
 
         public bool IsValid => !string.IsNullOrEmpty(serviceNameTextBox.Text);
-        public Operation Operation => new Operation(OperationArea.Services, OperationMethod.Stop, ServiceName);
+        public IUpdateAction Operation => new StopServiceAction();
     }
 }

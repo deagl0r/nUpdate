@@ -9,7 +9,7 @@ using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 using nUpdate.Administration.Properties;
 
-namespace ExplorerNavigationButton
+namespace nUpdate.Administration.UI.Controls.ExplorerNavigationButton
 {
     /// <summary>
     ///     A button with the appearance of the explorer's navigation buttons.

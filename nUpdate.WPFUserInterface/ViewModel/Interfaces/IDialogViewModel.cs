@@ -1,10 +1,13 @@
 ﻿// IDialogViewModel.cs, 10.06.2019
 // Copyright (C) Dominic Beger 17.06.2019
 
-using System.Windows.Threading;
+
 
 // ReSharper disable once CheckNamespace
-namespace nUpdate.WPFUserInterface.ViewModel.Interfaces
+
+using System.Windows.Threading;
+
+namespace nUpdate.UI.WPF.ViewModel.Interfaces
 {
     public interface IDialogViewModel
     {

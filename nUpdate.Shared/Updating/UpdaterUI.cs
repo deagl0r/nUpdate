@@ -4,7 +4,7 @@
 using System.Threading;
 using nUpdate.Internal.Core.Localization;
 
-namespace nUpdate.Updating
+namespace nUpdate
 {
     public sealed partial class UpdaterUI
     {

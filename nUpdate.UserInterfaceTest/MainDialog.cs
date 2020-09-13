@@ -5,7 +5,7 @@ using System;
 using System.Globalization;
 using System.Threading;
 using System.Windows.Forms;
-using nUpdate.Updating;
+using nUpdate.UI.WindowsForms;
 
 namespace nUpdate.UserInterfaceTest
 {

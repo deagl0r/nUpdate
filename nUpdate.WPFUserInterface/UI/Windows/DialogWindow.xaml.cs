@@ -3,12 +3,11 @@
 
 using System.ComponentModel;
 using System.Windows;
-using nUpdate.Internal.Core;
-using nUpdate.WPFUserInterface.ViewModel;
-using nUpdate.WPFUserInterface.ViewModel.Interfaces;
+using nUpdate.UI.WPF.ViewModel;
+using nUpdate.UI.WPF.ViewModel.Interfaces;
 using Application = System.Windows.Forms.Application;
 
-namespace nUpdate.UI.Windows
+namespace nUpdate.UI.WPF.UI.Windows
 {
     /// <summary>
     ///     Interaktionslogik für DialogWindow.xaml

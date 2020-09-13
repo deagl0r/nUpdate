@@ -7,15 +7,12 @@ using System.Linq;
 using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Threading;
-using nUpdate.Internal.Core;
-using nUpdate.Internal.Core.Localization;
-using nUpdate.Internal.Core.Operations;
-using nUpdate.Updating;
-using nUpdate.WPFUserInterface.ServiceInterfaces;
-using nUpdate.WPFUserInterface.ViewModel.Interfaces;
+using nUpdate.Localization;
+using nUpdate.UI.WPF.ServiceInterfaces;
+using nUpdate.UI.WPF.ViewModel.Interfaces;
 
 // ReSharper disable once CheckNamespace
-namespace nUpdate.WPFUserInterface.ViewModel
+namespace nUpdate.UI.WPF.ViewModel
 {
     public class ChangelogViewModel : UpdateUiBaseViewModel, IDialogViewModel
     {
@@ -67,18 +64,17 @@ namespace nUpdate.WPFUserInterface.ViewModel
                         versionText, changelogText);
             }
 
-            if (OperationAreas == null || OperationAreas.Count == 0)
+            /*if (OperationAreas == null || OperationAreas.Count == 0)
             {
                 AccessesText = $"{LocProperties.NewUpdateDialogAccessText} -";
                 return;
             }
 
             AccessesText =
-                $"{LocProperties.NewUpdateDialogAccessText} {string.Join(", ", LocalizationHelper.GetLocalizedEnumerationValues(LocProperties, OperationAreas.Cast<object>().GroupBy(item => item).Select(item => item.First()).ToArray()))}";
+                $"{LocProperties.NewUpdateDialogAccessText} {string.Join(", ", LocalizationHelper.GetLocalizedEnumerationValues(LocProperties, OperationAreas.Cast<object>().GroupBy(item => item).Select(item => item.First()).ToArray()))}";*/
         }
 
         public LocalizationProperties LocProperties { get; }
-        public List<OperationArea> OperationAreas { get; set; }
         public string Header { get; }
         public string InfoText { get; }
         public string AviableVersionText { get; }

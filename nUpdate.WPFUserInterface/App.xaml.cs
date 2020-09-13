@@ -3,7 +3,7 @@
 
 using System.Windows;
 
-namespace nUpdate.WPFUserInterface
+namespace nUpdate.UI.WPF
 {
     /// <summary>
     ///     Interaktionslogik für "App.xaml"

@@ -5,9 +5,9 @@ using System;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
+using nUpdate.Actions;
 using nUpdate.Administration.UI.Controls;
 using nUpdate.Administration.UI.Popups;
-using nUpdate.Internal.Core.Operations;
 
 namespace nUpdate.Administration.Core.Operations.Panels
 {
@@ -18,13 +18,13 @@ namespace nUpdate.Administration.Core.Operations.Panels
             InitializeComponent();
         }
 
-        public string NewName
+        public string DestinationFilePath
         {
             get => newNameTextBox.Text;
             set => newNameTextBox.Text = value;
         }
 
-        public string Path
+        public string SourceFilePath
         {
             get => pathTextBox.Text;
             set => pathTextBox.Text = value;
@@ -35,12 +35,14 @@ namespace nUpdate.Administration.Core.Operations.Panels
             get
             {
                 return !Controls.OfType<CueTextBox>().Any(item => string.IsNullOrEmpty(item.Text)) &&
-                       Path.Contains("\\") &&
-                       Path.Split(new[] {"\\"}, StringSplitOptions.RemoveEmptyEntries).Length >= 2;
+                       SourceFilePath.Contains("\\") &&
+                       SourceFilePath.Split(new[] {"\\"}, StringSplitOptions.RemoveEmptyEntries).Length >= 2 &&
+                       DestinationFilePath.Contains("\\") &&
+                       DestinationFilePath.Split(new[] {"\\"}, StringSplitOptions.RemoveEmptyEntries).Length >= 2;
             }
         }
 
-        public Operation Operation => new Operation(OperationArea.Files, OperationMethod.Rename, Path, NewName);
+        public IUpdateAction Operation => new MoveFileAction();
 
         private void environmentVariablesButton_Click(object sender, EventArgs e)
         {

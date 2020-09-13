@@ -6,8 +6,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 using System.Windows;
-using nUpdate.Internal.Core;
-using nUpdate.Internal.Core.Operations;
+using nUpdate.Actions;
 
 namespace nUpdate.WPFUpdateInstaller
 {
@@ -76,7 +75,7 @@ namespace nUpdate.WPFUpdateInstaller
         /// <summary>
         ///     The operations to perform.
         /// </summary>
-        public static Dictionary<string, IEnumerable<Operation>> Operations { get; set; }
+        public static Dictionary<string, IEnumerable<IUpdateAction>> Operations { get; set; }
 
         /// <summary>
         ///     The paths of the package files.
@@ -166,7 +165,7 @@ namespace nUpdate.WPFUpdateInstaller
                 ApplicationExecutablePath = appArguments[2];
                 AppName = appArguments[3];
                 Operations =
-                    Serializer.Deserialize<Dictionary<string, IEnumerable<Operation>>>(
+                    Serializer.Deserialize<Dictionary<string, IEnumerable<IUpdateAction>>>(
                         Encoding.UTF8.GetString(Convert.FromBase64String(appArguments[4])));
                 ExternalGuiAssemblyPath = appArguments[5];
                 ExtractFilesText = appArguments[6];

@@ -3,9 +3,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:viewModel="clr-namespace:nUpdate.WPFUserInterface.ViewModel"
-    xmlns:local="clr-namespace:nUpdate.WPFUserInterface.UI.UserControls"
-    x:Class="nUpdate.WPFUserInterface.UI.UserControls.uclUpdateSearch"
+    xmlns:viewModel="clr-namespace:nUpdate.UI.WPF.ViewModel"
+    x:Class="nUpdate.UI.WPF.UI.UserControls.uclUpdateSearch"
     mc:Ignorable="d"
     d:DataContext="{d:DesignInstance IsDesignTimeCreatable=True, Type={x:Type viewModel:UpdateSearchViewModel}}"
     d:DesignHeight="107" d:DesignWidth="261" Height="107" MinWidth="261" Background="White">

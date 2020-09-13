@@ -5,7 +5,7 @@ using System;
 using System.Windows.Input;
 
 // ReSharper disable once CheckNamespace
-namespace nUpdate.WPFUserInterface.ViewModel
+namespace nUpdate.UI.WPF.ViewModel
 {
     public class RelayCommand : ICommand
     {

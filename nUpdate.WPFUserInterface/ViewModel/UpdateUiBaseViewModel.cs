@@ -5,10 +5,9 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Windows.Media.Imaging;
-using nUpdate.Updating;
 
 // ReSharper disable once CheckNamespace
-namespace nUpdate.WPFUserInterface.ViewModel
+namespace nUpdate.UI.WPF.ViewModel
 {
     public class UpdateUiBaseViewModel : ViewModelBase
     {

@@ -1,10 +1,10 @@
 ﻿// IDialogWindowService.cs, 10.06.2019
 // Copyright (C) Dominic Beger 17.06.2019
 
-using nUpdate.WPFUserInterface.ViewModel.Interfaces;
+using nUpdate.UI.WPF.ViewModel.Interfaces;
 
 // ReSharper disable once CheckNamespace
-namespace nUpdate.WPFUserInterface.ServiceInterfaces
+namespace nUpdate.UI.WPF.ServiceInterfaces
 {
     public interface IDialogWindowService
     {

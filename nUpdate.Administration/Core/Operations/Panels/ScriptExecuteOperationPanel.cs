@@ -10,8 +10,8 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using FastColoredTextBoxNS;
+using nUpdate.Actions;
 using nUpdate.Administration.UI.Popups;
-using nUpdate.Internal.Core.Operations;
 
 namespace nUpdate.Administration.Core.Operations.Panels
 {
@@ -53,7 +53,7 @@ namespace nUpdate.Administration.Core.Operations.Panels
             }
         }
 
-        public Operation Operation => new Operation(OperationArea.Scripts, OperationMethod.Execute, Code);
+        public IUpdateAction Operation => new ExecuteScriptAction();
 
         private void codeTextBox_Leave(object sender, EventArgs e)
         {

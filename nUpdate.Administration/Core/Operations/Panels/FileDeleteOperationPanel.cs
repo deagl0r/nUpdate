@@ -6,8 +6,8 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
+using nUpdate.Actions;
 using nUpdate.Administration.UI.Popups;
-using nUpdate.Internal.Core.Operations;
 
 namespace nUpdate.Administration.Core.Operations.Panels
 {
@@ -28,8 +28,7 @@ namespace nUpdate.Administration.Core.Operations.Panels
 
         public bool IsValid => ItemList.Any();
 
-        public Operation Operation
-            => new Operation(OperationArea.Files, OperationMethod.Delete, Path, ItemList.ToList());
+        public IUpdateAction Operation => new DeleteFileAction();
 
         private void addButton_Click(object sender, EventArgs e)
         {

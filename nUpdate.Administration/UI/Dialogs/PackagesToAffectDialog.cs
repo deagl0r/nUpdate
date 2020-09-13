@@ -4,7 +4,6 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using nUpdate.Updating;
 
 namespace nUpdate.Administration.UI.Dialogs
 {

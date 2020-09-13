@@ -4,7 +4,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-using nUpdate.Internal.Core.Operations;
+using nUpdate.Actions;
 
 namespace nUpdate.Administration.Core.Operations.Panels
 {
@@ -39,9 +39,7 @@ namespace nUpdate.Administration.Core.Operations.Panels
                                                                        .Split(',')
                                                                        .Contains(string.Empty));
 
-        public Operation Operation
-            =>
-                new Operation(OperationArea.Services, OperationMethod.Start, ServiceName,
-                    Arguments);
+        public IUpdateAction Operation
+            => new StartServiceAction();
     }
 }

@@ -9,7 +9,7 @@ using nUpdate.Internal.Core;
 
 [assembly: InternalsVisibleTo("nUpdate.Test")]
 
-namespace nUpdate.Updating
+namespace nUpdate
 {
     internal class UpdateResult
     {

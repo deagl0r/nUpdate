@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 using Microsoft.Win32;
-using nUpdate.Internal.Core.Operations;
+using nUpdate.Actions;
 
 namespace nUpdate.Administration.Core.Operations.Panels
 {
@@ -50,8 +50,7 @@ namespace nUpdate.Administration.Core.Operations.Panels
 
         public bool IsValid => !string.IsNullOrEmpty(subKeyTextBox.Text) && nameValuePairListView.Items.Count > 0;
 
-        public Operation Operation
-            => new Operation(OperationArea.Registry, OperationMethod.SetValue, KeyPath, NameValuePairs);
+        public IUpdateAction Operation => new SetRegistryValueAction();
 
         private void addButton_Click(object sender, EventArgs e)
         {

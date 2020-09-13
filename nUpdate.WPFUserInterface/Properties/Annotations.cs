@@ -11,7 +11,7 @@ using System;
 // ReSharper disable MemberCanBeProtected.Global
 // ReSharper disable InconsistentNaming
 
-namespace nUpdate.WPFUserInterface.Annotations
+namespace nUpdate.UI.WPF.Properties
 {
     /// <summary>
     ///     Indicates that the value of the marked element could be <c>null</c> sometimes,

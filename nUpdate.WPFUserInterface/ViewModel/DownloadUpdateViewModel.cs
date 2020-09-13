@@ -6,15 +6,13 @@ using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Threading;
 using nUpdate.Exceptions;
-using nUpdate.Internal.Core;
-using nUpdate.Internal.Core.Localization;
+using nUpdate.Localization;
+using nUpdate.UI.WPF.ServiceInterfaces;
+using nUpdate.UI.WPF.ViewModel.Interfaces;
 using nUpdate.UpdateEventArgs;
-using nUpdate.Updating;
-using nUpdate.WPFUserInterface.ServiceInterfaces;
-using nUpdate.WPFUserInterface.ViewModel.Interfaces;
 
 // ReSharper disable once CheckNamespace
-namespace nUpdate.WPFUserInterface.ViewModel
+namespace nUpdate.UI.WPF.ViewModel
 {
     public class DownloadUpdateViewModel : UpdateUiBaseViewModel, IDialogViewModel
     {

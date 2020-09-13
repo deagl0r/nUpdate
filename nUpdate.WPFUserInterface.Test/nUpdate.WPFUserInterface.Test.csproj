@@ -8,11 +8,12 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>nUpdate.WPFUserInterface.Test</RootNamespace>
     <AssemblyName>nUpdate.WPFUserInterface.Test</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -101,21 +102,13 @@
       <Project>{5e63208a-8f06-4b99-a41d-f469be4cfd00}</Project>
       <Name>nUpdate.UpdateInstaller.Client.GuiInterface</Name>
     </ProjectReference>
-    <ProjectReference Include="..\nUpdate.Internal\nUpdate.Internal.csproj">
-      <Project>{efb71d69-ebf9-4f60-b776-de443730a3dd}</Project>
-      <Name>nUpdate.Internal</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\nUpdate.UpdateInstaller\nUpdate.UpdateInstaller.csproj">
-      <Project>{2bbc927a-b18c-4bfe-8325-d9387f217095}</Project>
-      <Name>nUpdate.UpdateInstaller</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\nUpdate.WPFUpdateInstaller\nUpdate.WPFUpdateInstaller.csproj">
-      <Project>{e2e8a9ea-9a0d-4c3c-8dfe-30339fce1810}</Project>
-      <Name>nUpdate.WPFUpdateInstaller</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\nUpdate.WPFUserInterface\nUpdate.WPFUserInterface.csproj">
+    <ProjectReference Include="..\nUpdate.WPFUserInterface\nUpdate.UI.WPF.csproj">
       <Project>{ef0aa5c9-ffef-440d-975a-4e78c3bbba17}</Project>
-      <Name>nUpdate.WPFUserInterface</Name>
+      <Name>nUpdate.UI.WPF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\nUpdate\nUpdate.csproj">
+      <Project>{1f5cbe95-f969-45bb-a385-2fd1a3a5ac32}</Project>
+      <Name>nUpdate</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

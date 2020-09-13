@@ -1,4 +1,4 @@
-﻿using nUpdate.Internal.UI.Controls;
+﻿using nUpdate.UI.WindowsForms.Controls;
 
 namespace nUpdate.Administration.Core.Operations.Panels
 {

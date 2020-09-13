@@ -5,14 +5,12 @@ using System;
 using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Threading;
-using nUpdate.Internal.Core;
-using nUpdate.Internal.Core.Localization;
-using nUpdate.Updating;
-using nUpdate.WPFUserInterface.ServiceInterfaces;
-using nUpdate.WPFUserInterface.ViewModel.Interfaces;
+using nUpdate.Localization;
+using nUpdate.UI.WPF.ServiceInterfaces;
+using nUpdate.UI.WPF.ViewModel.Interfaces;
 
 // ReSharper disable once CheckNamespace
-namespace nUpdate.WPFUserInterface.ViewModel
+namespace nUpdate.UI.WPF.ViewModel
 {
     public class UpdateSearchViewModel : UpdateUiBaseViewModel, IDialogViewModel
     {

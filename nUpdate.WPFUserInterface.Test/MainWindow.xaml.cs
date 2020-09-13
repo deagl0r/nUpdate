@@ -4,12 +4,11 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
 using System.Windows;
-using nUpdate.Updating;
 using System.Threading;
 using System.Globalization;
-using System.Windows.Data;
+using nUpdate.UI.WPF;
+using nUpdate.UI.WPF.Services;
 
 namespace nUpdate.WPFUserInterface.Test
 {
@@ -24,7 +23,7 @@ namespace nUpdate.WPFUserInterface.Test
         public MainWindow()
         {
             InitializeComponent();
-            Services.ServiceInjector.InjectServices();
+            ServiceInjector.InjectServices();
 
             ConditionValues =
                 new ObservableCollection<KeyValueHelper>();

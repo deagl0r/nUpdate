@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using nUpdate.Administration.Core;
 using nUpdate.Administration.Core.Win32;
 using nUpdate.Administration.TransferInterface;
+using nUpdate.Administration.UI.Controls.ExplorerNavigationButton;
 using nUpdate.Administration.UI.Popups;
 using Starksoft.Aspen.Ftps;
 
@@ -93,7 +94,7 @@ namespace nUpdate.Administration.UI.Dialogs
                 foreach (
                     var c in
                     (from Control c in Controls where c.Visible select c).Where(
-                        c => c.GetType() != typeof(ExplorerNavigationButton.ExplorerNavigationButton)))
+                        c => c.GetType() != typeof(ExplorerNavigationButton)))
                     c.Enabled = enabled;
 
                 if (!enabled)

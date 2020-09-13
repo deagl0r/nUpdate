@@ -1,7 +1,7 @@
 ﻿// ButtonTheme.cs, 10.06.2019
 // Copyright (C) Dominic Beger 17.06.2019
 
-namespace ExplorerNavigationButton
+namespace nUpdate.Administration.UI.Controls.ExplorerNavigationButton
 {
     /// <summary>
     ///     The theme of the ExplorerNavigationButton.

@@ -2,12 +2,12 @@
 // Copyright (C) Dominic Beger 17.06.2019
 
 using System.Windows;
-using nUpdate.UI.Windows;
-using nUpdate.WPFUserInterface.ServiceInterfaces;
-using nUpdate.WPFUserInterface.ViewModel.Interfaces;
+using nUpdate.UI.WPF.ServiceInterfaces;
+using nUpdate.UI.WPF.UI.Windows;
+using nUpdate.UI.WPF.ViewModel.Interfaces;
 
 // ReSharper disable once CheckNamespace
-namespace nUpdate.WPFUserInterface.Services
+namespace nUpdate.UI.WPF.Services
 {
     internal class DialogWindowService : IDialogWindowService
     {

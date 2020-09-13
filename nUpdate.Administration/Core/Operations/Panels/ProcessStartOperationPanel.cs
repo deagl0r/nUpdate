@@ -4,8 +4,8 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using nUpdate.Actions;
 using nUpdate.Administration.UI.Popups;
-using nUpdate.Internal.Core.Operations;
 
 namespace nUpdate.Administration.Core.Operations.Panels
 {
@@ -33,8 +33,7 @@ namespace nUpdate.Administration.Core.Operations.Panels
                 !string.IsNullOrEmpty(pathTextBox.Text) && pathTextBox.Text.Contains("\\") &&
                 pathTextBox.Text.Split(new[] {"\\"}, StringSplitOptions.RemoveEmptyEntries).Length >= 2;
 
-        public Operation Operation => new Operation(OperationArea.Processes, OperationMethod.Start, pathTextBox.Text,
-            Arguments);
+        public IUpdateAction Operation => new StartProcessAction();
 
         private void environmentVariablesButton_Click(object sender, EventArgs e)
         {

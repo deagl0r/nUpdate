@@ -1,5 +1,7 @@
 ﻿using System.Windows.Forms;
-using nUpdate.Internal.UI.Controls;
+using nUpdate.Administration.UI.Controls.ExplorerNavigationButton;
+using nUpdate.UI.WindowsForms.Controls;
+using ArrowDirection = nUpdate.Administration.UI.Controls.ExplorerNavigationButton.ArrowDirection;
 
 namespace nUpdate.Administration.UI.Dialogs
 {
@@ -37,8 +39,8 @@ namespace nUpdate.Administration.UI.Dialogs
             this.continueButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
             this.controlPanel1 = new BottomPanel();
-            this.backButton = new ExplorerNavigationButton.ExplorerNavigationButton();
-            this.forwardButton = new ExplorerNavigationButton.ExplorerNavigationButton();
+            this.backButton = new ExplorerNavigationButton();
+            this.forwardButton = new ExplorerNavigationButton();
             this.serverDataTreeView = new nUpdate.Administration.UI.Controls.ExplorerTreeView();
             this.loadingPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -106,7 +108,7 @@ namespace nUpdate.Administration.UI.Dialogs
             // 
             // forwardButton
             // 
-            this.forwardButton.ArrowDirection = ExplorerNavigationButton.ArrowDirection.Right;
+            this.forwardButton.ArrowDirection = ArrowDirection.Right;
             this.forwardButton.BackColor = System.Drawing.Color.Black;
             this.forwardButton.Enabled = false;
             this.forwardButton.Location = new System.Drawing.Point(33, 6);
@@ -262,8 +264,8 @@ namespace nUpdate.Administration.UI.Dialogs
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.Button continueButton;
         private System.Windows.Forms.ImageList serverImageList;
-        private ExplorerNavigationButton.ExplorerNavigationButton backButton;
-        private ExplorerNavigationButton.ExplorerNavigationButton forwardButton;
+        private ExplorerNavigationButton backButton;
+        private ExplorerNavigationButton forwardButton;
         private Controls.ExplorerTreeView serverDataTreeView;
         private Panel loadingPanel;
         private PictureBox pictureBox1;

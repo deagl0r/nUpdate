@@ -1,5 +1,5 @@
 ﻿using nUpdate.Administration.UI.Controls;
-using nUpdate.Internal.UI.Controls;
+using nUpdate.UI.WindowsForms.Controls;
 
 namespace nUpdate.Administration.UI.Dialogs
 {
