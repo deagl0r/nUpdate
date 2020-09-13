@@ -24,9 +24,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nUpdate.UserInterfaceTest",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nUpdate.WPFUpdateInstaller", "nUpdate.WPFUpdateInstaller\nUpdate.WPFUpdateInstaller.csproj", "{E2E8A9EA-9A0D-4C3C-8DFE-30339FCE1810}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nUpdate.UI.WPF", "nUpdate.WPFUserInterface\nUpdate.UI.WPF.csproj", "{EF0AA5C9-FFEF-440D-975A-4E78C3BBBA17}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nUpdate.UI.WPF", "nUpdate.UI.WPF\nUpdate.UI.WPF.csproj", "{EF0AA5C9-FFEF-440D-975A-4E78C3BBBA17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nUpdate.WPFUserInterface.Test", "nUpdate.WPFUserInterface.Test\nUpdate.WPFUserInterface.Test.csproj", "{AD20F1CF-B07F-46FF-8452-917D8AC21AE8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nUpdate.UI.WPF.Test", "nUpdate.UI.WPF.Test\nUpdate.UI.WPF.Test.csproj", "{AD20F1CF-B07F-46FF-8452-917D8AC21AE8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nUpdate", "nUpdate\nUpdate.csproj", "{1F5CBE95-F969-45BB-A385-2FD1A3A5AC32}"
 EndProject

@@ -4,13 +4,12 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Windows;
-using System.Threading;
 using System.Globalization;
-using nUpdate.UI.WPF;
+using System.Threading;
+using System.Windows;
 using nUpdate.UI.WPF.Services;
 
-namespace nUpdate.WPFUserInterface.Test
+namespace nUpdate.UI.WPF.Test
 {
     /// <summary>
     /// Interaktionslogik für MainWindow.xaml
