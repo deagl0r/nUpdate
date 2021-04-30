@@ -77,7 +77,7 @@ namespace nUpdate.UI.Dialogs
 
         private async void UpdateDownloadDialog_Shown(object sender, EventArgs e)
         {
-            var progress = new Progress<UpdateDownloadProgressChangedEventArgs>();
+            var progress = new System.Progress<UpdateDownloadProgressChangedEventArgs>();
             progress.ProgressChanged += (o, value) => ProgressPercentage = value.Percentage;
 
             try

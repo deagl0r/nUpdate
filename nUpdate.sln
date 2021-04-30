@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nUpdate.Internal", "nUpdate.Internal\nUpdate.Internal.csproj", "{EFB71D69-EBF9-4F60-B776-DE443730A3DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nUpdate.Internal", "nUpdate.Internal\nUpdate.Internal.csproj", "{EFB71D69-EBF9-4F60-B776-DE443730A3DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nUpdate.Test", "nUpdate.Test\nUpdate.Test.csproj", "{4BF8AB62-1A33-49BB-8054-B154D3E64957}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nUpdate.Test", "nUpdate.Test\nUpdate.Test.csproj", "{4BF8AB62-1A33-49BB-8054-B154D3E64957}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nUpdate.UpdateInstaller", "nUpdate.UpdateInstaller\nUpdate.UpdateInstaller.csproj", "{2BBC927A-B18C-4BFE-8325-D9387F217095}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nUpdate.UpdateInstaller", "nUpdate.UpdateInstaller\nUpdate.UpdateInstaller.csproj", "{2BBC927A-B18C-4BFE-8325-D9387F217095}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nUpdate.UpdateInstaller.Client.GuiInterface", "nUpdate.Client.GuiInterface\nUpdate.UpdateInstaller.Client.GuiInterface.csproj", "{5E63208A-8F06-4B99-A41D-F469BE4CFD00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nUpdate.UpdateInstaller.Client.GuiInterface", "nUpdate.Client.GuiInterface\nUpdate.UpdateInstaller.Client.GuiInterface.csproj", "{5E63208A-8F06-4B99-A41D-F469BE4CFD00}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C106649D-F4C0-4F98-8D9E-AF35793E405A}"
 	ProjectSection(SolutionItems) = preProject
@@ -18,30 +18,30 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C10664
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nUpdate.Administration.TransferInterface", "nUpdate.Administration.TransferInterface\nUpdate.Administration.TransferInterface.csproj", "{B4D46506-AC10-4887-9BA4-E0673D22E582}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nUpdate.Administration.TransferInterface", "nUpdate.Administration.TransferInterface\nUpdate.Administration.TransferInterface.csproj", "{B4D46506-AC10-4887-9BA4-E0673D22E582}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nUpdate.Administration", "nUpdate.Administration\nUpdate.Administration.csproj", "{804F7359-BD07-4C8D-A126-A863CD27AA4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nUpdate.Administration", "nUpdate.Administration\nUpdate.Administration.csproj", "{804F7359-BD07-4C8D-A126-A863CD27AA4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nUpdate.UserInterfaceTest", "nUpdate.UserInterfaceTest\nUpdate.UserInterfaceTest.csproj", "{1C11588B-06FC-4502-A7C1-00C75E9E551F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nUpdate.UserInterfaceTest", "nUpdate.UserInterfaceTest\nUpdate.UserInterfaceTest.csproj", "{1C11588B-06FC-4502-A7C1-00C75E9E551F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nUpdate.ProvideTAP", "nUpdate.ProvideTAP\nUpdate.ProvideTAP.csproj", "{B60F0AEE-F710-44FF-9C64-7BC4FCBD1BF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nUpdate.ProvideTAP", "nUpdate.ProvideTAP\nUpdate.ProvideTAP.csproj", "{B60F0AEE-F710-44FF-9C64-7BC4FCBD1BF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nUpdate.WithoutTAP", "nUpdate.WithoutTAP\nUpdate.WithoutTAP.csproj", "{CE1809EE-88FD-449C-81AB-6409F9B4ECEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nUpdate.WithoutTAP", "nUpdate.WithoutTAP\nUpdate.WithoutTAP.csproj", "{CE1809EE-88FD-449C-81AB-6409F9B4ECEA}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "nUpdate.Shared", "nUpdate.Shared\nUpdate.Shared.shproj", "{1FC358A3-632D-4E44-8533-057D72176220}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nUpdate.WPFUpdateInstaller", "nUpdate.WPFUpdateInstaller\nUpdate.WPFUpdateInstaller.csproj", "{E2E8A9EA-9A0D-4C3C-8DFE-30339FCE1810}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nUpdate.WPFUpdateInstaller", "nUpdate.WPFUpdateInstaller\nUpdate.WPFUpdateInstaller.csproj", "{E2E8A9EA-9A0D-4C3C-8DFE-30339FCE1810}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nUpdate.WPFUserInterface", "nUpdate.WPFUserInterface\nUpdate.WPFUserInterface.csproj", "{EF0AA5C9-FFEF-440D-975A-4E78C3BBBA17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nUpdate.WPFUserInterface", "nUpdate.WPFUserInterface\nUpdate.WPFUserInterface.csproj", "{EF0AA5C9-FFEF-440D-975A-4E78C3BBBA17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nUpdate.WPFUserInterface.Test", "nUpdate.WPFUserInterface.Test\nUpdate.WPFUserInterface.Test.csproj", "{AD20F1CF-B07F-46FF-8452-917D8AC21AE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nUpdate.WPFUserInterface.Test", "nUpdate.WPFUserInterface.Test\nUpdate.WPFUserInterface.Test.csproj", "{AD20F1CF-B07F-46FF-8452-917D8AC21AE8}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		nUpdate.Shared\nUpdate.Shared.projitems*{1fc358a3-632d-4e44-8533-057d72176220}*SharedItemsImports = 13
-		nUpdate.Shared\nUpdate.Shared.projitems*{b60f0aee-f710-44ff-9c64-7bc4fcbd1bf5}*SharedItemsImports = 4
-		nUpdate.Shared\nUpdate.Shared.projitems*{ce1809ee-88fd-449c-81ab-6409f9b4ecea}*SharedItemsImports = 4
-		nUpdate.Shared\nUpdate.Shared.projitems*{ef0aa5c9-ffef-440d-975a-4e78c3bbba17}*SharedItemsImports = 4
+		nUpdate.Shared\nUpdate.Shared.projitems*{b60f0aee-f710-44ff-9c64-7bc4fcbd1bf5}*SharedItemsImports = 5
+		nUpdate.Shared\nUpdate.Shared.projitems*{ce1809ee-88fd-449c-81ab-6409f9b4ecea}*SharedItemsImports = 5
+		nUpdate.Shared\nUpdate.Shared.projitems*{ef0aa5c9-ffef-440d-975a-4e78c3bbba17}*SharedItemsImports = 5
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
