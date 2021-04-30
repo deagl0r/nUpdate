@@ -31,7 +31,7 @@ namespace nUpdate.UI.Dialogs
         private void InitializeComponent()
         {
             this.cancelButton = new System.Windows.Forms.Button();
-            this.controlPanel1 = new BottomPanel();
+            this.controlPanel1 = new nUpdate.Internal.UI.Controls.BottomPanel();
             this.downloadProgressBar = new System.Windows.Forms.ProgressBar();
             this.headerLabel = new System.Windows.Forms.Label();
             this.infoLabel = new System.Windows.Forms.Label();
@@ -53,14 +53,14 @@ namespace nUpdate.UI.Dialogs
             // 
             this.controlPanel1.BackColor = System.Drawing.SystemColors.Control;
             this.controlPanel1.Controls.Add(this.cancelButton);
-            this.controlPanel1.Location = new System.Drawing.Point(0, 108);
+            this.controlPanel1.Location = new System.Drawing.Point(0, 128);
             this.controlPanel1.Name = "controlPanel1";
-            this.controlPanel1.Size = new System.Drawing.Size(327, 40);
+            this.controlPanel1.Size = new System.Drawing.Size(333, 40);
             this.controlPanel1.TabIndex = 19;
             // 
             // downloadProgressBar
             // 
-            this.downloadProgressBar.Location = new System.Drawing.Point(20, 78);
+            this.downloadProgressBar.Location = new System.Drawing.Point(20, 93);
             this.downloadProgressBar.Name = "downloadProgressBar";
             this.downloadProgressBar.Size = new System.Drawing.Size(290, 18);
             this.downloadProgressBar.TabIndex = 13;
@@ -72,7 +72,7 @@ namespace nUpdate.UI.Dialogs
             this.headerLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(153)))));
             this.headerLabel.Location = new System.Drawing.Point(17, 9);
             this.headerLabel.Name = "headerLabel";
-            this.headerLabel.Size = new System.Drawing.Size(264, 32);
+            this.headerLabel.Size = new System.Drawing.Size(217, 28);
             this.headerLabel.TabIndex = 12;
             this.headerLabel.Text = "Downloading updates...";
             // 
@@ -81,17 +81,17 @@ namespace nUpdate.UI.Dialogs
             this.infoLabel.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.infoLabel.Location = new System.Drawing.Point(17, 41);
             this.infoLabel.Name = "infoLabel";
-            this.infoLabel.Size = new System.Drawing.Size(293, 26);
+            this.infoLabel.Size = new System.Drawing.Size(293, 49);
             this.infoLabel.TabIndex = 11;
             this.infoLabel.Text = "Please wait while the available updates are\r\ndownloaded...  {0}";
             // 
             // UpdateDownloadDialog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.cancelButton;
-            this.ClientSize = new System.Drawing.Size(327, 148);
+            this.ClientSize = new System.Drawing.Size(333, 174);
             this.Controls.Add(this.controlPanel1);
             this.Controls.Add(this.downloadProgressBar);
             this.Controls.Add(this.headerLabel);
