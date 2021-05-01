@@ -29,8 +29,8 @@ namespace nUpdate.WPFUpdateInstaller
 
         private void InitializeServices()
         {
-            var application = new App();
-            application.InitializeComponent();
+            //var application = new App();
+            //application.InitializeComponent();
 
             _services.Add(typeof(IProgressReporter), new ProgressReporterService());
         }

@@ -1270,7 +1270,7 @@ namespace nUpdate.Administration.UI.Dialogs
 
         private async Task UploadPackage(UpdateVersion packageVersion)
         {
-            await TaskEx.Run(() =>
+            await Task.Run(() =>
             {
                 if (!File.Exists(
                     Project.Packages.First(item => item.Version == packageVersion.ToString()).LocalPackagePath))

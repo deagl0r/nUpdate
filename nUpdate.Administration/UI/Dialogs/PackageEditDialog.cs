@@ -1618,7 +1618,7 @@ namespace nUpdate.Administration.UI.Dialogs
                 selectedPath = folderDialog.SelectedPath;
             }
 
-            TaskEx.Run(() => ListDirectoryContent(selectedPath, onlyContent));
+            Task.Run(() => ListDirectoryContent(selectedPath, onlyContent));
         }
 
         private void ListDirectoryContent(string path, bool onlyContent)

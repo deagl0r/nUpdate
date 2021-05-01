@@ -87,7 +87,7 @@ namespace nUpdate.Updating
         /// <seealso cref="DownloadPackages" />
         public Task DownloadPackagesAsync(IProgress<UpdateDownloadProgressChangedEventArgs> progress = null)
         {
-            return TaskEx.Run(async () =>
+            return Task.Run(async () =>
             {
                 _downloadCancellationTokenSource?.Dispose();
                 _downloadCancellationTokenSource = new CancellationTokenSource();
@@ -234,7 +234,7 @@ namespace nUpdate.Updating
         /// <exception cref="OperationCanceledException" />
         public Task<bool> SearchForUpdatesAsync()
         {
-            return TaskEx.Run(async () =>
+            return Task.Run(async () =>
             {
                 // It may be that this is not the first search call and previously saved data needs to be disposed.
                 Cleanup();
