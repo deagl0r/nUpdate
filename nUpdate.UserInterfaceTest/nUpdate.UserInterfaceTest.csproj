@@ -22,9 +22,7 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="MainDialog.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="MainDialog.cs" />
     <Compile Update="MainDialog.Designer.cs">
       <DependentUpon>MainDialog.cs</DependentUpon>
     </Compile>
@@ -54,5 +52,13 @@
   <ItemGroup>
     <ProjectReference Include="..\nUpdate.ProvideTAP\nUpdate.ProvideTAP.csproj" />
     <ProjectReference Include="..\nUpdate.Internal\nUpdate.Internal.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="UserInterfaceTestSettings.Exampel.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="UserInterfaceTestSettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>

@@ -1,0 +1,11 @@
+{
+    "Uri": "",
+    "RsaKey": "<RSAKeyValue><Modulus></Modulus><Exponent>AQAB</Exponent></RSAKeyValue>",
+    "Language": "",
+    "Version": "0.0.0.0",
+    "Conditions": 
+        {
+            "Key": "Value" 
+        }
+    
+}
